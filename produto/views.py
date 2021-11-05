@@ -4,9 +4,16 @@ from .models import Produto
 
 # Create your views here.
 
-def produto_detalhado_view(request):
-  obj = Produto.objects.get(id=1)
+def cardapio(request):
+  produtosAtivos = Produto.objects.filter(disponivel="True")
+  sabores = produtosAtivos.filter(categoria="SABOR")
+  bebidas = produtosAtivos.filter(categoria="BEBIDA")
+  combos = produtosAtivos.filter(categoria="COMBO")
 
-  context = { 'object':obj }
+  context = {
+    'sabores' : sabores,
+    'bebidas' : bebidas, 
+    'combos' : combos
+  }
 
-  return render(request, "produto/produto_detalhado.html", context)
+  return render(request, "produto/cardapio.html", context)

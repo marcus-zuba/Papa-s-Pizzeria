@@ -5,7 +5,6 @@ from .models import Produto
 
 @admin.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):
-  list_display = ['titulo', 'preco', 'disponivel', 
-                  'criado', 'atualizado']
-  list_filter = ['disponivel','criado', 'atualizado']
+  list_display = ['titulo', 'preco', 'categoria', 'disponivel']
+  list_filter = ['categoria', 'disponivel']
   list_editable = ['preco', 'disponivel']

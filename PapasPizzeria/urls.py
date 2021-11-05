@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from produto.views import produto_detalhado_view
+from produto.views import cardapio
 
 urlpatterns = [
-    path('', produto_detalhado_view),
+    path('', cardapio),
     path('admin/', admin.site.urls),
 ]

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  
+  body{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #cardapio{
+    background-color: black;
+    color: wheat;
+  }
+  .container_produto{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .produto{
+    padding: 10px;
+  }
+
+</style>
+
+<div id=cardapio>
+  <h1>Cardapio</h1>
+  <h1>Sabores de Pizza</h1>
+  <div id=sabores class="container_produto">
+    {% for sabor in sabores %}
+    {% include "produto/produto_detalhado.html" with object=sabor %}
+    {% endfor %}
+  </div>
+
+  <h1>Bebidas</h1>
+  <div id=bebidas class="container_produto">
+  {% for bebida in bebidas %}
+  {% include "produto/produto_detalhado.html" with object=bebida %}
+  {% endfor %}
+  </div>
+
+  <h1>Combos</h1>
+  <div id=combos class="container_produto">
+  {% for combo in combos %}
+  {% include "produto/produto_detalhado.html" with object=combo %}
+  {% endfor %}
+  </div>
+
+</div>
+
+{% endblock %}
