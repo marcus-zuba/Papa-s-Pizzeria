@@ -1,0 +1,167 @@
+[
+  {
+    "model":"produto.produto",
+    "pk":1,
+    "fields":{
+      "titulo": "Frango com Catupiry",
+      "urlImagem":"https://imgbox.com/yZHKtdcy",
+      "descricao":"Pizza clássica, o sabor Frango com Catupiry é uma das preferidas dos brasileiros. Se você ainda não experimentou o sabor único que essa combinação oferece, vale a pena conferir. O requeijão valoriza o sabor do frango e vice-versa, o que torna a pizza ainda mais gostosa.",
+      "preco":48.99,
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":2,
+    "fields":{
+      "titulo": "Napolitana",
+      "urlImagem":"https://imgbox.com/jmBniayh",
+      "descricao":"Tradicional de Nápole, cidade da pizza, a receita surgiu por volta de 1700 e era servida como refeição prática para trabalhadores. É tão saborosa que a Arte dos Pizzaiolos Napoletanos foi declarada Patrimônio Imaterial da Humanidade pela Unesco.",
+      "preco":"65.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":3,
+    "fields":{
+      "titulo": "Calabresa",
+      "urlImagem":"https://imgbox.com/rzjOoz0L",
+      "descricao":"Diz a lenda que a clássica pizza de calabresa nasceu nos Estados Unidos, mas a própria linguiça da Calabresa é uma criação brasileira que nasceu no bairro de paulistano e teve inspiração nas linguiças italianas. Uma deliciosa combinação de Linguiça Calabresa, rodelas de cebolas frescas, azeitonas pretas, muçarela, polpa de tomate, orégano e massa especial garante um sabor único à Pizza de Calabresa",
+      "preco":"47.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":4,
+    "fields":{
+      "titulo": "4 Queijos",
+      "urlImagem":"https://imgbox.com/KaW4ZuUw",
+      "descricao":"A Pizza Quatro Queijos é uma deliciosa combinação de massa fresca, crocante e coberta com muito queijo quente derretido.",
+      "preco":"42.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":5,
+    "fields":{
+      "titulo": "Pizza de Bacon",
+      "urlImagem":"https://imgbox.com/8bP9Fbriss",
+      "descricao":"Quem gosta de bacon sabe que toda receita com barriga de porco defumada é mais gostosa. Pizza não seria uma exceção!",
+      "preco":"55.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":6,
+    "fields":{
+      "titulo": "Pizza Portuguesa",
+      "urlImagem":"https://imgbox.com/gD8yYTXM",
+      "descricao":"A pizza portuguesa é um sabor bastante popular em todas as pizzarias do nosso país. Trazida ao Brasil pelos portugueses, ela fica empatada em segundo lugar com a pizza marguerita, sabor tradicional italiano.",
+      "preco":"49.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":7,
+    "fields":{
+      "titulo": "Pizza Margherita",
+      "urlImagem":"https://imgbox.com/dnzJIJNS",
+      "descricao":"Reza a lenda que a deliciosa pizza margherita teve sua história iniciada quando os reis da Itália visitaram a cidade de Nápoles e decidiram provar a iguaria. O pizzaiolo que fez a pizza especialmente para o rei resolveu cobri-la com tomates, muçarela e manjericão para homenagear as cores da bandeira da Itália. Não somente a bandeira foi homenageada, mas também a rainha Margherita di Savoia, que teve seu nome dado à pizza especial.",
+      "preco":"52.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":8,
+    "fields":{
+      "titulo": "Pizza Pepperoni",
+      "urlImagem":"https://imgbox.com/2gmPu4Md",
+      "descricao":"Pepperoni é uma variedade ítalo-americana apimentada do salame seco, feita de carne de porco e bovina, incluindo algumas vezes toucinho. A equivalente à pizza de pepperoni na Itália é conhecida como “pizza alla diavola”.",
+      "preco":"34.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":9,
+    "fields":{
+      "titulo": "Pizza Chocolate",
+      "urlImagem":"https://imgbox.com/SPYlPQeP",
+      "descricao":"A mais querida entre as opções doces, a pizza de chocolate é capaz de arrancar suspiros por seu sabor inconfundível.",
+      "preco":"30.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":10,
+    "fields":{
+      "titulo": "Pizza Muçarela",
+      "urlImagem":"https://imgbox.com/s0dOKsf8",
+      "descricao":"Tradicional, a pizza de muçarela é ideal para quem busca um recheio simples, mas sem deixar o sabor de lado. Simples e perfeita como tem que ser.",
+      "preco":"32.90",
+      "categoria":"SABOR"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":11,
+    "fields":{
+      "titulo": "Coca Cola 2L",
+      "urlImagem":"https://imgbox.com/zSTnA7nU",
+      "descricao":"A Coca-Cola 2L Original é o refrigerante mais tradicional e consumido no mundo. Possui sabor inconfundível e único. É feito a partir de água gaseificada, açúcar, extrato de noz de cola e cafeína. É perfeita para compartilhar os melhores momentos da vida e com sua embalagem econômica ficou ainda mais fácil.",
+      "preco":"8.49",
+      "categoria":"BEBIDA"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":12,
+    "fields":{
+      "titulo": "Guaraná 2L",
+      "urlImagem":"https://imgbox.com/pfEGSjMq",
+      "descricao":"Guaraná Antarctica 2L Regular : Gostinho do Brasil com sabor de quero mais? Vem de Guaraná Antarctica. O refrigerante centenário original do Brasil que é coisa nossa. Lançado em 1921, é a primeira bebida com sabor de guaraná feita com esse fruto que combina com tudo. Bateu aquela sede? Toma um gole que refrexcaaaa!",
+      "preco":"6.90",
+      "categoria":"BEBIDA"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":13,
+    "fields":{
+      "titulo": "Fanta 2L",
+      "urlImagem":"https://imgbox.com/BMwl2cLg",
+      "descricao":"Refrigerante Fanta Laranja 2L. Elaborado a partir de suco natural de laranja, açúcar e água gaseificada.",
+      "preco":"7.29",
+      "categoria":"BEBIDA"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":14,
+    "fields":{
+      "titulo": "Schweppes 2L",
+      "urlImagem":"https://imgbox.com/gABxXMyH",
+      "descricao":"Schweppes 2L é uma linha premium de bebidas, desenvolvida na Inglaterra em 1783 por Jacob Schweppe, um cientista amador que descobriu um método de produzir água carbonatada em escala comercial. Sua primeira fábrica teve lugar em Londres em 1792, produzindo a Schweppes Soda. Elaborado com água gaseificada, açúcar, suco de maçã, grapfruit e laranja, aroma natural e corante artificial tartrazina. Contém caloria, carboidrato e sódio.",
+      "preco":"7.89",
+      "categoria":"BEBIDA"
+    }
+  },
+  {
+    "model":"produto.produto",
+    "pk":15,
+    "fields":{
+      "titulo": "Pepsi 2L",
+      "urlImagem":"https://imgbox.com/2PXX3R0m",
+      "descricao":"Originalmente, a fórmula da Pepsi 2L foi criada para fins medicinais. Mas seu sabor agradou tanto que o xarope começou a ser consumido simplesmente por prazer. Cinco anos mais tarde, a fórmula transformou-se em bebida e começou a ser comercializada. Hoje, a Pepsi é um refrigerante de cola com aroma natural, muito apreciado pelo sabor suave e pela refrescância.",
+      "preco":"5.99",
+      "categoria":"BEBIDA"
+    }
+  }
+]
