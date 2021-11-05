@@ -7,8 +7,6 @@
   body{
     margin-left: 20%;
     margin-right: 20%;
-  }
-  #cardapio{
     background-color: black;
     color: wheat;
   }
@@ -16,15 +14,15 @@
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .produto{
     padding: 10px;
+    border: 1px solid wheat;
   }
 
 </style>
 
 <div id=cardapio>
-  <h1>Cardapio</h1>
+  <h1><u>Cardapio</u></h1>
   <h1>Sabores de Pizza</h1>
   <div id=sabores class="container_produto">
     {% for sabor in sabores %}
