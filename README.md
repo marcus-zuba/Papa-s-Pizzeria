@@ -6,15 +6,15 @@ Após clonar o repositório, execute os seguintes passos na raiz do projeto:
 
 - Crie um ambiente virtual para o projeto
     - `mkdir env`
+    - `pip install virtualenv`
     - `virtualenv env/papaspizzeria`
 
 - Ative o ambiente virtual (faça isso sempre antes de executar o projeto)
     - `source env/papaspizzeria/bin/activate`
     - Obs: caso queira desativar o ambiente virtual, basta executar `deactivate`
 
-- Instale o Django e o Livesync no ambiente virtual 
-    - `pip install Django==2.1.5`
-    - `pip install django-livesync`
+- Instale os pacotes necessários no ambiente virtual 
+    - `pip install -r requirements.txt`
 
 - Execute as migrations para que o seu banco de dados local seja criado (faça isso sempre para manter o seu banco atualizado)
     - `python manage.py migrate`
