@@ -29,7 +29,11 @@
     <ul>
       <li><a href="/">Cardapio</a></li>
       <li>Carrinho</li>
-      <li>Login</li>
+      {% if request.user.is_authenticated %}
+        <li>{{ request.user }}</li>
+      {% else %}
+        <li><a href="/conta/login">Login</a></li>
+      {% endif %}
     </ul>
   </nav>
 </div>
