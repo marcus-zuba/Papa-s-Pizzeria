@@ -19,7 +19,7 @@ from django.urls import path, include
 from produto.views import cardapio
 
 urlpatterns = [
-    path('', cardapio),
+    path('', cardapio, name='cardapio'),
     path('admin/', admin.site.urls),
     path('conta/', include('conta.urls'))
 ]

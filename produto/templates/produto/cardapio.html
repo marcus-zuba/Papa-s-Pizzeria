@@ -29,16 +29,16 @@
 
   <h1>Bebidas</h1>
   <div id=bebidas class="container_produto">
-  {% for bebida in bebidas %}
-  {% include "produto/produto_detalhado.html" with object=bebida %}
-  {% endfor %}
+    {% for bebida in bebidas %}
+    {% include "produto/produto_detalhado.html" with object=bebida %}
+    {% endfor %}
   </div>
 
   <h1>Combos</h1>
   <div id=combos class="container_produto">
-  {% for combo in combos %}
-  {% include "produto/produto_detalhado.html" with object=combo %}
-  {% endfor %}
+    {% for combo in combos %}
+    {% include "produto/produto_detalhado.html" with object=combo %}
+    {% endfor %}
   </div>
 
 </div>

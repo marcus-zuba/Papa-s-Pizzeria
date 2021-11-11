@@ -121,3 +121,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'cardapio'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'cardapio'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'redefinir_senha@papaspizzeria.com'
