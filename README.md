@@ -19,10 +19,15 @@ Após clonar o repositório, execute os seguintes passos na raiz do projeto:
 - Execute as migrations para que o seu banco de dados local seja criado (faça isso sempre para manter o seu banco atualizado)
     - `python manage.py migrate`
 
-- Popule o banco de dados com os produtos
+- Popule o banco de dados com os dados do json
     - `python manage.py loaddata dados_produto.json`
 
 - Execute o server
     - `python manage.py runserver`
 
 - O projeto será hosteado e poderá ser acessado em [localhost:8000](http://localhost:8000)
+
+- Caso queira criar um usuário de administrador, basta executar:
+    - `python manage.py createsuperuser`
+    - Com esse usuário, você pode acessar [localhost:8000/admin](http://localhost:8000) 
+    e controlar diversos aspectos do projeto!  
