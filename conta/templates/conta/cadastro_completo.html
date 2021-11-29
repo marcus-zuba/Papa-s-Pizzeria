@@ -3,6 +3,6 @@
 {% block title %}Bem vindo!{% endblock %}
 
 {% block content %}
-  <h1>Bem vindo, {{ new_user.first_name }}!</h1>
+  <h1>Bem vindo, {{ new_user.conta.nome_completo }}!</h1>
   <p>Seu cadastro foi realizado com sucesso! Agora você pode <a href="/conta/login">fazer o login</a>.</p>
 {% endblock %}
