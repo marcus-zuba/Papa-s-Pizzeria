@@ -36,9 +36,9 @@ class Conta(models.Model):
 
 @receiver(post_save, sender=User)
 def update_user(sender, instance, created, **kwargs):
-    if created:
-      Conta.objects.create(usuario=instance, nome_completo="123", cpf="123", telefone="123")
-      Endereco.objects.create(usuario=instance, cep="123", rua="123", bairro=Bairro.objects.get(pk=1), numero=123, complemento="")
-      instance.conta.save()
-      instance.endereco.save()
+  if created:
+    Conta.objects.create(usuario=instance, nome_completo="123", cpf="123", telefone="123")
+    Endereco.objects.create(usuario=instance, cep="123", rua="123", bairro=Bairro.objects.get(pk=1), numero=123, complemento="")
+    instance.conta.save()
+    instance.endereco.save()
 
