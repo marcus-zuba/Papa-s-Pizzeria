@@ -55,8 +55,8 @@
   <nav>
     <ul>
       <li><a href="/">Cardapio</a></li>
-      <li>Carrinho</li>
       {% if request.user.is_authenticated %}
+        <li>Carrinho</li>
         <div class="right-menu">
           <li class="menu-button">{{ request.user }}</li>
           <div class="dropdown-menu">

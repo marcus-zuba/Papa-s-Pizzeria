@@ -6,7 +6,7 @@
       "titulo": "Frango com Catupiry",
       "urlImagem":"https://thumbs2.imgbox.com/8c/2b/8XXuRdBR_t.png",
       "descricao":"Pizza clássica, o sabor Frango com Catupiry é uma das preferidas dos brasileiros. Se você ainda não experimentou o sabor único que essa combinação oferece, vale a pena conferir. O requeijão valoriza o sabor do frango e vice-versa, o que torna a pizza ainda mais gostosa.",
-      "preco":48.99,
+      "preco":"48.99",
       "categoria":"SABOR"
     }
   },
@@ -217,6 +217,46 @@
       "descricao":"Pizza Doce de chocolate acompanhado de um refrigerante Pepsi 2L",
       "preco":"32.99",
       "categoria":"COMBO"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":1,
+    "fields":{
+      "nome_bairro":"Centro",
+      "taxa_entrega":"10.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":2,
+    "fields":{
+      "nome_bairro":"Planalto",
+      "taxa_entrega":"5.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":3,
+    "fields":{
+      "nome_bairro":"Pampulha",
+      "taxa_entrega":"7.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":4,
+    "fields":{
+      "nome_bairro":"Floramar",
+      "taxa_entrega":"8.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":5,
+    "fields":{
+      "nome_bairro":"Castelo",
+      "taxa_entrega":"7.50"
     }
   }
 ]

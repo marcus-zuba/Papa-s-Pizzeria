@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Create an account{% endblock %}
+
+{% block content %}
+  <h1>Crie uma conta</h1>
+  <p>Se cadastre utilizando o seguinte formulário:</p>
+  <form action="." method="post">
+  <h2>Dados para login</h2>
+  {{ user_form.as_p }}
+  <h2>Dados pessoais</h2>
+  {{ conta_form.as_p }}
+  <h2>Endereço</h2>
+  {{ endereco_form.as_p }}
+  {% csrf_token %}
+  <p><input type="submit" value="Criar conta"></p>
+  </form>
+{% endblock %}
