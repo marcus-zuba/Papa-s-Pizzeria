@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'livesync',
     'django.contrib.staticfiles',
     'produto',
-    'carrinho'
+    'carrinho',
+    'pedido'
 ]
 
 MIDDLEWARE = [

@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
 from produto.views import cardapio
 
 urlpatterns = [
     path('carrinho/', include('carrinho.urls', namespace="carrinho")),
     path('admin/', admin.site.urls),
     path('conta/', include('conta.urls')),
+    path('pedido/', include('pedido.urls', namespace='pedido')),
     path('', cardapio, name='cardapio'),
 ]

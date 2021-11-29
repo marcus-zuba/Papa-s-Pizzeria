@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+Obrigado!
+{% endblock %}
+
+{% block content %}
+  <h1>Obrigado!</h1>
+  <p>Seu pedido foi concluído com sucesso! O número do seu pedido é 
+  <strong>{{ pedido.id }}</strong>, com valor total de <strong>${{ pedido.get_total_cost }}</strong>.</p>
+{% endblock %}

@@ -23,6 +23,11 @@ def cart_remove(request, produto_id):
   carrinho.remove(produto)
   return redirect('carrinho:carrinho_detalhado')
 
+def cart_clean(request):
+  carrinho = Carrinho(request)
+  carrinho.clear()
+  return redirect('carrinho:carrinho_detalhado')
+
 def carrinho_detalhado(request):
   carrinho = Carrinho(request)
   print(len(carrinho))
