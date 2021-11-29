@@ -23,21 +23,21 @@
   <h1>Sabores de Pizza</h1>
   <div id=sabores class="container_produto">
     {% for sabor in sabores %}
-    {% include "produto/produto_detalhado.html" with object=sabor %}
+    {% include "produto/produto_detalhado.html" with produto=sabor form=form %}
     {% endfor %}
   </div>
 
   <h1>Bebidas</h1>
   <div id=bebidas class="container_produto">
     {% for bebida in bebidas %}
-    {% include "produto/produto_detalhado.html" with object=bebida %}
+    {% include "produto/produto_detalhado.html" with produto=bebida form=form %}
     {% endfor %}
   </div>
 
   <h1>Combos</h1>
   <div id=combos class="container_produto">
     {% for combo in combos %}
-    {% include "produto/produto_detalhado.html" with object=combo %}
+    {% include "produto/produto_detalhado.html" with produto=combo form=form %}
     {% endfor %}
   </div>
 

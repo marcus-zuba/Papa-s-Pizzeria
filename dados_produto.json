@@ -3,7 +3,7 @@
     "model":"produto.produto",
     "pk":1,
     "fields":{
-      "titulo": "Frango com Catupiry",
+      "titulo": "Pizza Frango com Catupiry",
       "urlImagem":"https://thumbs2.imgbox.com/8c/2b/8XXuRdBR_t.png",
       "descricao":"Pizza clássica, o sabor Frango com Catupiry é uma das preferidas dos brasileiros. Se você ainda não experimentou o sabor único que essa combinação oferece, vale a pena conferir. O requeijão valoriza o sabor do frango e vice-versa, o que torna a pizza ainda mais gostosa.",
       "preco":"48.99",
@@ -14,7 +14,7 @@
     "model":"produto.produto",
     "pk":2,
     "fields":{
-      "titulo": "Napolitana",
+      "titulo": "Pizza Napolitana",
       "urlImagem":"https://thumbs2.imgbox.com/ba/ef/5JfcTi8f_t.jpg",
       "descricao":"Tradicional de Nápole, cidade da pizza, a receita surgiu por volta de 1700 e era servida como refeição prática para trabalhadores. É tão saborosa que a Arte dos Pizzaiolos Napoletanos foi declarada Patrimônio Imaterial da Humanidade pela Unesco.",
       "preco":"65.90",
@@ -25,7 +25,7 @@
     "model":"produto.produto",
     "pk":3,
     "fields":{
-      "titulo": "Calabresa",
+      "titulo": "Pizza Calabresa",
       "urlImagem":"https://thumbs2.imgbox.com/de/63/Xmh6xlgh_t.png",
       "descricao":"Diz a lenda que a clássica pizza de calabresa nasceu nos Estados Unidos, mas a própria linguiça da Calabresa é uma criação brasileira que nasceu no bairro de paulistano e teve inspiração nas linguiças italianas. Uma deliciosa combinação de Linguiça Calabresa, rodelas de cebolas frescas, azeitonas pretas, muçarela, polpa de tomate, orégano e massa especial garante um sabor único à Pizza de Calabresa",
       "preco":"47.90",
@@ -36,7 +36,7 @@
     "model":"produto.produto",
     "pk":4,
     "fields":{
-      "titulo": "4 Queijos",
+      "titulo": "Pizza 4 Queijos",
       "urlImagem":"https://imgbox.com/KaW4ZuUw",
       "descricao":"A Pizza Quatro Queijos é uma deliciosa combinação de massa fresca, crocante e coberta com muito queijo quente derretido.",
       "preco":"42.90",
@@ -168,7 +168,7 @@
     "model":"produto.produto",
     "pk":16,
     "fields":{
-      "titulo": "Frango com Catupiry + Coca Coca 2L",
+      "titulo": "Pizza Frango com Catupiry + Coca Coca 2L",
       "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
       "descricao":"Combo Pizza de Frango Catupiry com refrigerante Coca Cola 2L",
       "preco":"52.99",
@@ -179,7 +179,7 @@
     "model":"produto.produto",
     "pk":17,
     "fields":{
-      "titulo": "Napolitana + Guaraná 2L",
+      "titulo": "Pizza Napolitana + Guaraná 2L",
       "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
       "descricao":"Combo Pizza Napolitana com refrigerante Guaraná 2L",
       "preco":"67.00",
@@ -190,7 +190,7 @@
     "model":"produto.produto",
     "pk":18,
     "fields":{
-      "titulo": "Calabresa + 4Queijos + Fanta 2L",
+      "titulo": "Pizza Calabresa + Pizza 4Queijos + Fanta 2L",
       "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
       "descricao":"Supercombo Pizza Calabresa + 4Queijos + refrigerante Fanta 2L",
       "preco":"110.99",
@@ -201,7 +201,7 @@
     "model":"produto.produto",
     "pk":19,
     "fields":{
-      "titulo": "Bacon + Portuguesa + Schweppes 2L",
+      "titulo": "Pizza Bacon + Pizza Portuguesa + Schweppes 2L",
       "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
       "descricao":"Supercombo Pizza Bacon + Portuguesa + refrigerante Schweppes 2L",
       "preco":"102.99",

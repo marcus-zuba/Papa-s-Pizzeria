@@ -8,15 +8,19 @@
 </style>
 
 <div class=produto>
-  <h2>{{ object.titulo }}</h2>
-  <img src={{ object.urlImagem }}>
-  <p>{% if object.descricao != None and object.descricao != '' %}
-    {{ object.descricao }}{% endif %}
+  <h2>{{ produto.titulo }}</h2>
+  <img src={{ produto.urlImagem }}>
+  <p>{% if produto.descricao != None and produto.descricao != '' %}
+    {{ produto.descricao }}{% endif %}
   </p>
   <div style="display: flex; flex-direction: row; 
-              justify-content: space-between; padding: auto;">
-    <h3>R$ {{ object.preco }}</h3>
-    <button>Comprar</button>
+              justify-content: space-between; padding: auto; align-items: baseline;">
+    <h3>R$ {{ produto.preco }}</h3>
+    <form action="carrinho/adicionar/{{ produto.id }}/" method="post">
+      {{ form }}
+      {% csrf_token %}
+      <input type="submit" value="Adicionar ao carrinho">
+    </form>      
   </div>
 </div>
 

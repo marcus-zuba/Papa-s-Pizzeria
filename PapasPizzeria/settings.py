@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'livesync',
     'django.contrib.staticfiles',
-    'produto'
+    'produto',
+    'carrinho'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,5 @@ LOGOUT_REDIRECT_URL = 'cardapio'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'redefinir_senha@papaspizzeria.com'
+
+CARRINHO_SESSION_ID = 'carrinho'

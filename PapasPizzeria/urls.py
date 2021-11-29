@@ -19,7 +19,8 @@ from django.urls import path, include
 from produto.views import cardapio
 
 urlpatterns = [
-    path('', cardapio, name='cardapio'),
+    path('carrinho/', include('carrinho.urls', namespace="carrinho")),
     path('admin/', admin.site.urls),
-    path('conta/', include('conta.urls'))
+    path('conta/', include('conta.urls')),
+    path('', cardapio, name='cardapio'),
 ]

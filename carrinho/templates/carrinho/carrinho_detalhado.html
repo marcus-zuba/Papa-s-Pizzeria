@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Seu Carrinho
+{% endblock %}
+
+{% block content %}
+  {% if carrinho %}
+    <h1>Seu carrinho</h1>
+    <table class="carrinho">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Remover</th>
+        <th>Preço Unitário</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in carrinho %}
+        {% with produto=item.produto %}
+          <tr>
+          <td>{{ produto.titulo }}</td>
+          <td>{{ item.quantidade }}</td>
+          <td><a href="/carrinho/remover/{{produto.id}}/">Remover</a></td>
+          <td class="num">${{ item.preco }}</td>
+          <td class="num">${{ item.preco_total }}</td>
+          </tr>
+        {% endwith %}
+      {% endfor %}
+      <tr class="total">
+      <td>Total</td>
+      <td colspan="4"></td>
+      <td class="num">${{ carrinho.obter_preco_total }}</td>
+      </tr>
+    </tbody>
+    </table>
+    <p class="text-right">
+    <a href="/" class="button light">Voltar ao cardápio</a>
+    <a href="#" class="button">Finalizar Compra</a>
+    </p>
+  {% else %}
+    <h1>Seu carrinho está vazio!</h1>
+    <a href="/" class="button light"><h2>Voltar ao cardápio</h2></a>
+  {% endif %}
+{% endblock %}
