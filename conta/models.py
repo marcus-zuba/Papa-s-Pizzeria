@@ -16,7 +16,7 @@ class Bairro(models.Model):
     return '{}'.format(self.nome_bairro)
 
 class Endereco(models.Model):
-  usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+  usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, related_name='endereco')
   cep = models.CharField(max_length=8, validators=[RegexValidator(r'^\d{1,10}$')])
   rua = models.CharField(max_length=50)
   bairro = models.ForeignKey(Bairro, on_delete=models.CASCADE)

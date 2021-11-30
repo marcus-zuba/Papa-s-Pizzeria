@@ -33,10 +33,10 @@ class Carrinho(object):
     carrinho = self.carrinho.copy()
     for produto in produtos:
       carrinho[str(produto.id)]['produto'] = produto
-      for item in carrinho.values():
-        item['preco'] = Decimal(item['preco'])
-        item['preco_total'] = item['preco'] * item['quantidade']
-        yield item
+    for item in carrinho.values():
+      item['preco'] = Decimal(item['preco'])
+      item['preco_total'] = item['preco'] * item['quantidade']
+      yield item
 
   def __len__(self):
     """

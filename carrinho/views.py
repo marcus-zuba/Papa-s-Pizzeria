@@ -30,5 +30,4 @@ def cart_clean(request):
 
 def carrinho_detalhado(request):
   carrinho = Carrinho(request)
-  print(len(carrinho))
   return render(request, 'carrinho/carrinho_detalhado.html', {'carrinho': carrinho})

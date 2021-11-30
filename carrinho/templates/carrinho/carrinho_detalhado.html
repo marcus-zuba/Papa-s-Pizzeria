@@ -50,7 +50,7 @@ Seu Carrinho
         <th>Quantidade</th>
         <th>Remover</th>
         <th>Preço Unitário</th>
-        <th>Preço</th>
+        <th>Preço Total</th>
       </tr>
     </thead>
     <tbody>
@@ -60,8 +60,8 @@ Seu Carrinho
           <td>{{ produto.titulo }}</td>
           <td>{{ item.quantidade }}</td>
           <td><a href="remover/{{ produto.id }}/"> X </a></td>
-          <td class="num">${{ item.preco }}</td>
-          <td class="num">${{ item.preco_total }}</td>
+          <td class="num">R${{ item.preco }}</td>
+          <td class="num">R${{ item.preco_total }}</td>
           </tr>
         {% endwith %}
       {% endfor %}
@@ -70,15 +70,22 @@ Seu Carrinho
       <tr>
         <td>Taxa de entrega</td>
         <td colspan="3"></td>
-        <td class="num">${{ carrinho.get_taxa_entrega }}</td>
+        <td class="num">R${{ carrinho.get_taxa_entrega }}</td>
       </tr>
       <tr class="total">
-        <td>Total</td>
+        <td>Valor Total do Pedido</td>
         <td colspan="3"></td>
-        <td class="num">${{ carrinho.get_preco_total }}</td>
+        <td class="num">R${{ carrinho.get_preco_total }}</td>
       </tr>
     </tbody>
     </table>
+    {% if request.user.is_authenticated %}
+      {% with endereco=request.user.endereco %}
+      <p>Seu pedido será entregue em {{ endereco.rua }}, 
+        No {{ endereco.numero }}, bairro {{ endereco.bairro }}</p>
+      {% endwith %}
+      <p>Caso precise modificar o seu endereço de entrega, <a href="/conta/">clique aqui.</a></p>
+    {% endif %}
     <p class="text-right">
       <a href="/" class="button light">→ Voltar ao cardápio</a><br>
       <a href="limpar/">→ Limpar Carrinho</a><br>
