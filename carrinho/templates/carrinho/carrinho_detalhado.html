@@ -6,44 +6,13 @@ Seu Carrinho
 {% endblock %}
 
 {% block content %}
+  <link rel="stylesheet" href="{% static 'css/tabela.css/' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css/' %}">
 
-<style>
-  .carrinho{
-    border-collapse: collapse;
-    margin: 0 30% 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  .carrinho thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-  }
-  .carrinho th,
-  .carrinho td {
-    padding: 12px 15px;
-  }
-  .carrinho tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  .carrinho tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  .carrinho tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  .carrinho tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-  }
-</style>
-
-
+  <div class="central">
   {% if carrinho %}
     <h1>Seu carrinho</h1>
-    <table class="carrinho">
+    <table class="tabela">
     <thead>
       <tr>
         <th>Produto</th>
@@ -103,4 +72,5 @@ Seu Carrinho
     <h1>Seu carrinho está vazio!</h1>
     <a href="/" class="button light"><h2>Voltar ao cardápio</h2></a>
   {% endif %}
+  </div>
 {% endblock %}

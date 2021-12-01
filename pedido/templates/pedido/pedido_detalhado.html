@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Seu Carrinho
+{% endblock %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/tabela.css/' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css/' %}">
+
+  <div class="central">
+    <h1>Detalhes da sua Compra</h1>
+    <h2>Compra realizada em {{pedido.atualizado}}</h2>
+    <table class="tabela">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Preço Unitário</th>
+        <th>Preço Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% with items=pedido.items.all %}
+      {% for item in items %}
+          <tr>
+          <td>{{ item.descricao }}</td>
+          <td>{{ item.quantidade }}</td>
+          <td class="num">R${{ item.preco }}</td>
+          <td class="num">R${{ item.get_cost }}</td>
+          </tr>
+      {% endfor %}
+      {% endwith %}
+      <tr></tr>
+      <tr></tr>
+      <tr>
+        <td>Taxa de entrega</td>
+        <td colspan="2"></td>
+        <td class="num">R${{ pedido.taxa_entrega }}</td>
+      </tr>
+      <tr class="total">
+        <td>Valor Total do Pedido</td>
+        <td colspan="2"></td>
+        <td class="num">R${{ pedido.get_total_cost }}</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+{% endblock %}

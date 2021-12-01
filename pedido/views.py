@@ -17,3 +17,7 @@ def criar_pedido(request):
     return render(request,'pedido/pedido_concluido.html',{'pedido': pedido})
   else:
     return redirect('carrinho:carrinho_detalhado')
+
+def pedido_detalhado(request, pedido_id):
+  pedido = Pedido.objects.get(id=pedido_id)
+  return render(request, 'pedido/pedido_detalhado.html',{'pedido':pedido})

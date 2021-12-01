@@ -1,8 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Painel de usuário{% endblock %}
 
 {% block content %}
+  <link rel="stylesheet" href="{% static 'css/tabela.css/' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css/' %}">
+
+  <div class="central">
   <h1>Painel de usuário</h1>
   <p>Bem vindo ao painel da sua conta!</p>
   <p><a href="">→ Editar informações de login</a></p>
@@ -10,4 +15,27 @@
   <p><a href="">→ Editar endereço</a></p>
 
   <h1>Histórico de compras</h1>
+  {% if compras %}
+  <table class="tabela">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Valor Total</th>
+        <th>Detalhes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for compra in compras %}
+      <tr>
+        <td>{{compra.atualizado}}</td>
+        <td>R$ {{compra.get_total_cost}}</td>
+        <td><a href="/pedido/detalhes/{{compra.id}}/">Detalhes</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <h3>Você ainda não fez nenhuma compra!</h3>
+  {% endif %}
+  </div>
 {% endblock %}

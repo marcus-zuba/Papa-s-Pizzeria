@@ -24,9 +24,30 @@ def login_usuario(request):
 
 @login_required
 def painel_usuario(request):
-  context = {'secao': 'painel_usuario'}
   compras = Pedido.objects.filter(usuario=request.user)
-  return render(request, 'conta/painel_usuario.html', context)
+  return render(request, 'conta/painel_usuario.html', {'compras':compras})
+
+"""
+@login_required
+def atualizar_login(request):
+  if request.method == 'POST':
+    form = UserRegistrationForm(request.POST)
+    if form.is_valid():
+      
+
+  form = UserRegistrationForm()
+  string = "de Login"
+
+@login_required
+def atualizar_conta(request):
+  form = ContaRegistrationForm()
+  string = "Pessoais"
+
+@login_required
+def atualizar_endereco(request):
+  form = EnderecoRegistrationForm()
+  string = "de Endereço"
+"""
 
 def cadastrar_usuario(request):
   if request.method == 'POST':
