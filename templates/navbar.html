@@ -2,22 +2,25 @@
 <link rel="stylesheet" href="{%  static 'css/navbar.css' %}">
 
 <div id=nav-bar-container> 
-  <h1>Papa's Pizzeria</h1>
-  <nav>
-    <ul>
-      <li><a href="/">Cardapio</a></li>
-      <li><a href="/carrinho">Carrinho</a></li>
-      {% if request.user.is_authenticated %}
-        <div class="right-menu">
-          <li class="menu-button">{{ request.user }}</li>
-          <div class="dropdown-menu">
-            <a href="/conta">Minha Conta</a>
-            <a href="/conta/logout">Desconectar</a>
-          </div>
+    
+    <img id= "logo" src="https://i.ibb.co/p1ZwfH1/img.png" alt="img">
+
+    <div id="menu-right">
+    <li><a href="/">Cardápio</a></li>
+    <li><a href="/carrinho">Carrinho</a></li>
+    {% if request.user.is_authenticated %}
+      <div class="right-menu">
+        <li class="menu-button">{{ request.user }}</li>
+        <div class="dropdown-menu">
+          <a href="/conta">Minha Conta</a>
+          <a href="/conta/logout">Desconectar</a>
         </div>
-      {% else %}
-        <li><a href="/conta/login">Login</a></li>
-      {% endif %}
-    </ul>
-  </nav>
+      </div>
+
+    {% else %}
+      <li><a href="/conta/login">Login</a></li>
+    {% endif %}
+    </div>
+    
+  
 </div>

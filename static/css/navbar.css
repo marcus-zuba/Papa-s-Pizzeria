@@ -1,20 +1,50 @@
-#nav-bar-container{
-    display: flex; 
-    flex-direction: row; 
+  #nav-bar-container{
+    position: sticky;
+    top: 0;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: tomato;
+    background-color: #ce290f;
+    overflow: hidden;
   }
-  ul {
+
+  #menu-right{
+    float:right;
     list-style-type: none;
     display: flex; 
     flex-direction: row;
   }
-  li{
-    padding: 5px;
+
+  #nav-bar-container a:hover{
+    background-color: #f9f9f9;
+    background-size: 15%;
+    transition: 0.25s;
   }
+
+  #logo{
+    width: 10%;
+    height: 20%;
+    position: fixed;
+    margin: 0px 0px 0px 85px;
+  }
+
+  #nav-bar-container a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  #nav-bar-container a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #menu-right {
+    float: right;
+  }
+
   a {
-    color:wheat;
-    text-decoration: none; /* no underline */
+    color: whitesmoke;
+    text-decoration: none;
   }
   a:hover{
     color:darkslategrey;
