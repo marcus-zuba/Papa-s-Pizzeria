@@ -12,7 +12,7 @@ urlpatterns = [
   path('cadastrar/', views.cadastrar_usuario, name='cadastrar'),
   path('login/', auth_views.LoginView.as_view(),name='login'),
   path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-  path('trocar_senha/',auth_views.PasswordChangeView.as_view(),name='password_change'),
+  path('trocar_senha/',auth_views.PasswordChangeView.as_view(success_url="sucesso/"),name='password_change'),
   path('trocar_senha/sucesso/',auth_views.PasswordChangeDoneView.as_view(),name='password_change_done'),
   path('redefinir_senha/',auth_views.PasswordResetView.as_view(),name='redefinir_senha'),
   path('redefinir_senha/sucesso/',auth_views.PasswordResetDoneView.as_view(),name='password_reset_done'),
