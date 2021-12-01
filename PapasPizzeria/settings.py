@@ -137,9 +137,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'conta:login'
 LOGIN_REDIRECT_URL = 'cardapio'
-LOGOUT_URL = 'logout'
+LOGOUT_URL = 'conta:logout'
 LOGOUT_REDIRECT_URL = 'cardapio'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
