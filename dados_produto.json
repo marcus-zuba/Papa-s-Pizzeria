@@ -1,6 +1,18 @@
 [
   {
     "model":"produto.produto",
+    "pk":-1,
+    "fields":{
+      "titulo": "Pizza de Dois Sabores",
+      "urlImagem":"",
+      "descricao":"Pizza de dois sabores",
+      "preco":"0.00",
+      "categoria":"",
+      "disponivel": "False"
+    }
+  },
+  {
+    "model":"produto.produto",
     "pk":1,
     "fields":{
       "titulo": "Pizza Frango com Catupiry",
@@ -217,6 +229,86 @@
       "descricao":"Pizza Doce de chocolate acompanhado de um refrigerante Pepsi 2L",
       "preco":"32.99",
       "categoria":"COMBO"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":1,
+    "fields":{
+      "sabor": "Frango com Catupiry",
+      "preco":"48.99"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":2,
+    "fields":{
+      "sabor": "Napolitana",
+      "preco":"65.99"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":3,
+    "fields":{
+      "sabor": "Calabresa",
+      "preco":"47.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":4,
+    "fields":{
+      "sabor": "4 Queijos",
+      "preco":"42.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":5,
+    "fields":{
+      "sabor": "Bacon",
+      "preco":"55.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":6,
+    "fields":{
+      "sabor": "Portuguesa",
+      "preco":"49.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":7,
+    "fields":{
+      "sabor": "Margherita",
+      "preco":"52.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":8,
+    "fields":{
+      "sabor": "Pepperoni",
+      "preco":"34.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":9,
+    "fields":{
+      "sabor": "Chocolate",
+      "preco":"30.90"
+    }
+  },
+  {
+    "model":"produto.saborpizza",
+    "pk":10,
+    "fields":{
+      "sabor": "Muçarela",
+      "preco":"32.90"
     }
   },
   {

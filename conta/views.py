@@ -5,6 +5,8 @@ from django.contrib.auth.decorators import login_required
 from .forms import LoginForm, UserRegistrationForm, ContaRegistrationForm, EnderecoRegistrationForm
 
 from django.utils.translation import activate
+
+activate('pt-br')
     
 # Create your views here.
 

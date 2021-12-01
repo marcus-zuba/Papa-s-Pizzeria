@@ -27,13 +27,10 @@ class Carrinho(object):
     Iterate over the items in the cart and get the products
     from the database.
     """
-    produto_ids = self.carrinho.keys()
-    # get the product objects and add them to the cart
-    produtos = Produto.objects.filter(id__in=produto_ids)
     carrinho = self.carrinho.copy()
-    for produto in produtos:
-      carrinho[str(produto.id)]['produto'] = produto
-    for item in carrinho.values():
+    for key, item in carrinho.items():
+      item['id'] = key
+      item['produto'] = Produto.objects.get(id=item['produto_id'])
       item['preco'] = Decimal(item['preco'])
       item['preco_total'] = item['preco'] * item['quantidade']
       yield item
@@ -44,26 +41,52 @@ class Carrinho(object):
     """
     return sum(item['quantidade'] for item in self.carrinho.values())
 
-  def add(self, produto, quantidade=1, atualizar_quantidade=False):
+  def add(self, produto, quantidade=1, titulo="", preco=0):
     """
     Add a produto to the carrinho or atualizar its quantidade.
     """
     produto_id = str(produto.id)
-    if produto_id not in self.carrinho:
-      self.carrinho[produto_id] = {'quantidade': 0,'preco': str(produto.preco)}
-    if atualizar_quantidade:
-      self.carrinho[produto_id]['quantidade'] = quantidade
+    key_atual = None
+
+    if(len(self.carrinho.keys())==0):
+      proxima_key = '0'
     else:
-      self.carrinho[produto_id]['quantidade'] += quantidade
+      keys_ints = list(map(int, self.carrinho.keys()))
+      proxima_key = str(max(keys_ints)+1)
+
+    for key, value in self.carrinho.items():
+      if produto_id == value['produto_id'] and produto_id != '-1':
+        key_atual = key
+      if produto_id == 1 and titulo == value['titulo']:
+        key_atual = key
+
+    if produto_id != '-1' and key_atual==None:
+      self.carrinho[proxima_key] = {'titulo':produto.titulo, 
+                                  'produto_id': produto_id,
+                                  'quantidade': 0,
+                                  'preco': str(produto.preco)}
+    elif produto_id == '-1' and key_atual==None:
+      self.carrinho[proxima_key] = {'titulo':titulo, 
+                                  'produto_id': produto_id,
+                                  'quantidade': 0,
+                                  'preco': str(preco)}
+
+    if key_atual == None:
+      key_atual = proxima_key
+
+    self.carrinho[key_atual]['quantidade'] += quantidade
+
     self.save()
 
-  def remove(self, produto):
+  def update_quantidade(self, key, quantidade):
+    self.carrinho[key]['quantidade'] = quantidade
+
+  def remove(self, key):
     """
     Remove a produto from the cart.
     """
-    produto_id = str(produto.id)
-    if produto_id in self.carrinho:
-      del self.carrinho[produto_id]
+    if key in self.carrinho:
+      del self.carrinho[key]
     self.save()
 
   def save(self):

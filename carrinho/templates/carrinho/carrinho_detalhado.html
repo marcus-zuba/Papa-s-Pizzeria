@@ -55,15 +55,20 @@ Seu Carrinho
     </thead>
     <tbody>
       {% for item in carrinho %}
-        {% with produto=item.produto %}
           <tr>
-          <td>{{ produto.titulo }}</td>
-          <td>{{ item.quantidade }}</td>
-          <td><a href="remover/{{ produto.id }}/"> X </a></td>
+          <td>{{ item.titulo }}</td>
+          <td>
+            <form action="atualizar/{{ item.id }}/" method="post">
+              {{ item.atualizar_quantidade_form.quantidade }}
+              {{ item.atualizar_quantidade_form.update }}
+            <input type="submit" value="Atualizar aqui">
+            {% csrf_token %}
+            </form>
+          </td>
+          <td><a href="remover/{{ item.id }}/"> X </a></td>
           <td class="num">R${{ item.preco }}</td>
           <td class="num">R${{ item.preco_total }}</td>
           </tr>
-        {% endwith %}
       {% endfor %}
       <tr></tr>
       <tr></tr>

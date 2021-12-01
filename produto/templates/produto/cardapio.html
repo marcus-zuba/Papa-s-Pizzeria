@@ -25,6 +25,22 @@
     {% for sabor in sabores %}
     {% include "produto/produto_detalhado.html" with produto=sabor form=form %}
     {% endfor %}
+    <div class=produto>
+      <h2>Pizza de Dois Sabores</h2>
+      <img src=https://thumbs2.imgbox.com/8c/2b/8XXuRdBR_t.png>
+      <div><p>Monte aqui a sua pizza personalizada de dois sabores!!! 
+        O valor será uma média dos valores individuais das duas pizzas!</p>
+      <div style="display: flex; flex-direction: row; 
+                  justify-content: space-between; padding: auto; align-items: baseline;">
+        <form action="carrinho/adicionar/-1/" method="post">
+          <div>
+          {{ form_dois_sabores }}
+          </div>
+          {% csrf_token %}
+          <input type="submit" value="Adicionar ao carrinho">
+        </form>      
+      </div>
+    </div>
   </div>
 
   <h1>Bebidas</h1>
