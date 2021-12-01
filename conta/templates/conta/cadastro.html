@@ -2,17 +2,22 @@
 
 {% block title %}Create an account{% endblock %}
 
+{% load static %}
+
 {% block content %}
-  <h1>Crie uma conta</h1>
-  <p>Se cadastre utilizando o seguinte formulário:</p>
-  <form action="." method="post">
-  <h2>Dados para login</h2>
-  {{ user_form.as_p }}
-  <h2>Dados pessoais</h2>
-  {{ conta_form.as_p }}
-  <h2>Endereço</h2>
-  {{ endereco_form.as_p }}
-  {% csrf_token %}
-  <p><input type="submit" value="Criar conta"></p>
-  </form>
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <div class="form-group">
+    <h1>Crie uma conta</h1>
+    <p>Se cadastre utilizando o seguinte formulário:</p>
+    <form action="." method="post">
+    <h2>Dados para login</h2>
+    {{ user_form.as_p }}
+    <h2>Dados pessoais</h2>
+    {{ conta_form.as_p }}
+    <h2>Endereço</h2>
+    {{ endereco_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Criar conta"></p>
+    </form>
+  <div></div>
 {% endblock %}

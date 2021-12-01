@@ -1,32 +1,10 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
-<style>
-  
-  #card_title { 
-    float: none;
-    text-align: center;
-  }
-
-  #cardapio{
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .container_produto{
-    display: grid;
-    padding: 10px;
-    margin: 10px 10px; 
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .produto{
-    margin: 10px 10px;
-    padding: 10px;
-    border: 1px solid wheat;
-  }
-
-</style>
+<link rel="stylesheet" href="{% static 'css/cardapio.css' %}">
 
 <div id=cardapio>
   <h1 id="card_title"><em>Cardápio</em></h1>
@@ -44,10 +22,20 @@
                     justify-content: space-between; padding: auto; align-items: baseline;">
           <form action="carrinho/adicionar/-1/" method="post">
             <div>
-            {{ form_dois_sabores }}
-            </div>
+              {% if messages %}
+               {% for message in messages %}
+               <p class="{{message.tags}}">{{ message }}</p>
+               {% endfor %}
+              {% endif %}
+            Primeiro Sabor: {{ form_dois_sabores.primeiro_sabor }} <br>
+            Segundo Sabor: {{ form_dois_sabores.segundo_sabor }} <br>
+          </div>
             {% csrf_token %}
-            <input type="submit" value="Adicionar ao carrinho">
+            <div style="display:flex; flex-direction: row; justify-content: space-between";>
+              Quantidade: {{ form_dois_sabores.quantidade }}
+              <span></span>
+              <input type="submit" value="Adicionar ao carrinho" style="align-self: flex-end;">
+            </div>
           </form>      
         </div>
       </div>

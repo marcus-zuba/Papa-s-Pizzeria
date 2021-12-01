@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papa's Pizzeria | Vem pro papai, vem!</title>
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">  
-    <style>
-      body{
-        color:#484849;
-        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&display=swap');
-        font-family: 'Martel Sans', sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="{%  static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&family=Martel:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> -->
   </head>
   <body>
     {% include 'navbar.html' %}
+    <!-- {% include 'messages.html' %} -->
     {% block content %}
     {% endblock %}
   </body>

@@ -27,14 +27,16 @@ Seu Carrinho
           <tr>
           <td>{{ item.titulo }}</td>
           <td>
+            <div style="display: flex; flex-direction: row;">
             <form action="atualizar/{{ item.id }}/" method="post">
               {{ item.atualizar_quantidade_form.quantidade }}
               {{ item.atualizar_quantidade_form.update }}
-            <input type="submit" value="Atualizar aqui">
+            <input type="submit" value="Atualizar">
             {% csrf_token %}
             </form>
+          </div>
           </td>
-          <td><a href="remover/{{ item.id }}/"> X </a></td>
+          <td><a href="remover/{{ item.id }}/" class="button"> X </a></td>
           <td class="num">R${{ item.preco }}</td>
           <td class="num">R${{ item.preco_total }}</td>
           </tr>
@@ -58,19 +60,19 @@ Seu Carrinho
       <p>Seu pedido será entregue em {{ endereco.rua }}, 
         No {{ endereco.numero }}, bairro {{ endereco.bairro }}</p>
       {% endwith %}
-      <p>Caso precise modificar o seu endereço de entrega, <a href="/conta/">clique aqui.</a></p>
+      <p>Caso precise modificar o seu endereço de entrega, <a href="/conta/atualizar/conta">clique aqui.</a></p>
     {% endif %}
-    <p class="text-right">
-      <a href="/" class="button light">→ Voltar ao cardápio</a><br>
-      <a href="limpar/">→ Limpar Carrinho</a><br>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">     
+      <a href="/" class="button">Voltar ao cardápio</a><br>
+      <a href="limpar/" class="button">Limpar Carrinho</a><br>
       <form action="/pedido/criar/" method="post">
         {% csrf_token %}
-        <input type="submit" value="Finalizar Compra"><br>
+        <input type="submit" value="Finalizar Compra" class="button">
       </form>
-    </p>
+    </div>
   {% else %}
     <h1>Seu carrinho está vazio!</h1>
-    <a href="/" class="button light"><h2>Voltar ao cardápio</h2></a>
+    <a href="/" class="button"> Voltar ao cardápio</a>
   {% endif %}
   </div>
 {% endblock %}

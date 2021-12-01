@@ -25,6 +25,13 @@ class UserRegistrationForm(forms.ModelForm):
       raise forms.ValidationError('Passwords don\'t match.')
     return cd['password2']
 
+class UserUpdateForm(forms.ModelForm):
+  username = forms.CharField(label='Usuario')
+  email = forms.EmailField(label='Email')
+  class Meta:
+    model = User
+    fields = ('username', 'email',)
+
 class ContaRegistrationForm(forms.ModelForm):
   class Meta:
     model = Conta

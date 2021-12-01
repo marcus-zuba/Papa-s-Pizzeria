@@ -6,7 +6,8 @@ from produto.models import Produto, SaborPizza
 from .carrinho import Carrinho
 from .forms import CartAddProductForm, CartAddPizzaDoisSaboresForm
 from decimal import Decimal
-from django.utils.translation import gettext as _
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -25,7 +26,8 @@ def cart_add(request, produto_id):
     if form.is_valid():
       cd = form.cleaned_data
       if(cd['primeiro_sabor']==cd['segundo_sabor']): 
-        raise ValidationError(_('Os sabores devem ser diferentes!'), code='invalid')
+        messages.error(request, 'Os sabores das pizzas devem ser diferentes!')
+        return redirect("cardapio")
       preco_sabor_1 = cd['primeiro_sabor'].preco
       preco_sabor_2 = cd['segundo_sabor'].preco
       preco = "{:.2f}".format((preco_sabor_1+preco_sabor_2)/2)

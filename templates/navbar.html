@@ -6,21 +6,17 @@
     <div id= "logo"><img width="100%" height="auto" src="https://i.ibb.co/p1ZwfH1/img.png" alt="img"></div>
 
     <div id="menu-right">
-    <li><a href="/">Cardápio</a></li>
-    <li><a href="/carrinho">Carrinho</a></li>
+    <li><a href="/" class="menu-button">Cardápio</a></li>
+    <li><a href="/carrinho" class="menu-button">Carrinho</a></li>
     {% if request.user.is_authenticated %}
+    <div class="right-menu-container">
       <div class="right-menu">
-        <li class="menu-button">{{ request.user }}</li>
-        <div class="dropdown-menu">
-          <a href="/conta">Minha Conta</a>
-          <a href="/conta/logout">Desconectar</a>
+        <li><a href="/conta" class="menu-button">{{ request.user.username }}</a></li>
         </div>
       </div>
-
+    </div>
     {% else %}
-      <li><a href="/conta/login">Login</a></li>
+      <li><a href="/conta/login" class="menu-button">Login</a></li>
     {% endif %}
     </div>
-    
-  
 </div>

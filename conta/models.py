@@ -28,7 +28,7 @@ class Endereco(models.Model):
 
 
 class Conta(models.Model):
-  usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+  usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, related_name='conta')
   nome_completo = models.CharField(max_length=100)
   cpf = CPFField('cpf')
   telefone = models.CharField(max_length=11, validators=[RegexValidator(r'^\d{1,14}$')])

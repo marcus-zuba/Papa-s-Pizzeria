@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Atualizar informações pessoais{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+  <div class="form-group">
+    <h1>Atualizar informações pessoais{{ string }}</h1>
+    <p>Utilize os formulários abaixo para atualizar suas informações:</p>
+    <form action="." method="post">
+    <h2>Dados pessoais</h2>
+      <div>Nome Completo: {{ form_conta.nome_completo }}</div>
+      <div>CPF: {{ form_conta.cpf }}</div>
+      <div>Telefone: {{ form_conta.telefone }}</div>
+    <h2>Endereço</h2>
+    <div>CEP: {{ form_endereco.cep }}</div>
+    <div>Rua: {{ form_endereco.rua }}</div>
+    <br>
+    <div>Bairro: {{ form_endereco.bairro }}</div>
+    <br>
+    <div>Número: {{ form_endereco.numero }}</div>
+    <br>
+    <div>Complemento: {{ form_endereco.complemento }}</div>
+
+
+    {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}" />
+      <button class="login__submit" type="submit">Atualizar</button>
+    </form>
+  </div>
+  
+
+{% endblock %}

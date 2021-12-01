@@ -9,10 +9,16 @@
 
   <div class="central">
   <h1>Painel de usuário</h1>
-  <p>Bem vindo ao painel da sua conta!</p>
-  <p><a href="">→ Editar informações de login</a></p>
-  <p><a href="">→ Editar informações pessoais</a></p>
-  <p><a href="">→ Editar endereço</a></p>
+  <p>Bem vindo ao painel da sua conta!               
+    {% if messages %}
+    {% for message in messages %}
+     <p class="{{message.tags}}">{{ message }}</p>
+     {% endfor %}
+   {% endif %}
+</p>
+  <a href="trocar_senha" class="button">Redefinir Senha</a>
+  <a href="atualizar/" class="button">Editar informações pessoais</a>
+  <a href="/conta/logout" class="button">Desconectar</a>
 
   <h1>Histórico de compras</h1>
   {% if compras %}

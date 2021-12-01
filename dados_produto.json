@@ -1,442 +1,442 @@
 [
   {
-    "model":"produto.produto",
-    "pk":-1,
-    "fields":{
+    "model": "produto.produto",
+    "pk": -1,
+    "fields": {
       "titulo": "Pizza de Dois Sabores",
-      "urlImagem":"",
-      "descricao":"Pizza de dois sabores",
-      "preco":"0.00",
-      "categoria":"",
+      "urlImagem": "",
+      "descricao": "Pizza de dois sabores",
+      "preco": "0.00",
+      "categoria": "",
       "disponivel": "False"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":1,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 1,
+    "fields": {
       "titulo": "Pizza Frango com Catupiry",
-      "urlImagem":"https://thumbs2.imgbox.com/8c/2b/8XXuRdBR_t.png",
-      "descricao":"Pizza clássica, o sabor Frango com Catupiry é uma das preferidas dos brasileiros. Se você ainda não experimentou o sabor único que essa combinação oferece, vale a pena conferir. O requeijão valoriza o sabor do frango e vice-versa, o que torna a pizza ainda mais gostosa.",
-      "preco":"48.99",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/8c/2b/8XXuRdBR_t.png",
+      "descricao": "Pizza clássica, o sabor Frango com Catupiry é uma das preferidas dos brasileiros. Confira o sabor único dessa combinação!",
+      "preco": "48.99",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":2,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 2,
+    "fields": {
       "titulo": "Pizza Napolitana",
-      "urlImagem":"https://thumbs2.imgbox.com/ba/ef/5JfcTi8f_t.jpg",
-      "descricao":"Tradicional de Nápole, cidade da pizza, a receita surgiu por volta de 1700 e era servida como refeição prática para trabalhadores. É tão saborosa que a Arte dos Pizzaiolos Napoletanos foi declarada Patrimônio Imaterial da Humanidade pela Unesco.",
-      "preco":"65.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/ba/ef/5JfcTi8f_t.jpg",
+      "descricao": "Tradicional de Nápole, cidade da pizza, a receita surgiu por volta de 1700 e era servida como refeição prática para trabalhadores. É tão saborosa que a Arte dos Pizzaiolos Napoletanos foi declarada Patrimônio Imaterial da Humanidade pela Unesco.",
+      "preco": "65.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":3,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 3,
+    "fields": {
       "titulo": "Pizza Calabresa",
-      "urlImagem":"https://thumbs2.imgbox.com/de/63/Xmh6xlgh_t.png",
-      "descricao":"Diz a lenda que a clássica pizza de calabresa nasceu nos Estados Unidos, mas a própria linguiça da Calabresa é uma criação brasileira que nasceu no bairro de paulistano e teve inspiração nas linguiças italianas. Uma deliciosa combinação de Linguiça Calabresa, rodelas de cebolas frescas, azeitonas pretas, muçarela, polpa de tomate, orégano e massa especial garante um sabor único à Pizza de Calabresa",
-      "preco":"47.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/de/63/Xmh6xlgh_t.png",
+      "descricao": "Uma deliciosa combinação de Linguiça Calabresa, rodelas de cebolas frescas, azeitonas pretas, muçarela, polpa de tomate, orégano e massa especial garante um sabor único à Pizza de Calabresa",
+      "preco": "47.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":4,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 4,
+    "fields": {
       "titulo": "Pizza 4 Queijos",
-      "urlImagem":"https://i.ibb.co/YjhLF7w/4queijos.jpg",
-      "descricao":"A Pizza Quatro Queijos é uma deliciosa combinação de massa fresca, crocante e coberta com muito queijo quente derretido.",
-      "preco":"42.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://i.ibb.co/YjhLF7w/4queijos.jpg",
+      "descricao": "A Pizza Quatro Queijos é uma deliciosa combinação de massa fresca, crocante e coberta com muito queijo quente derretido.",
+      "preco": "42.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":5,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 5,
+    "fields": {
       "titulo": "Pizza de Bacon",
-      "urlImagem":"https://thumbs2.imgbox.com/35/29/LfiwNwWa_t.jpg",
-      "descricao":"Quem gosta de bacon sabe que toda receita com barriga de porco defumada é mais gostosa. Pizza não seria uma exceção!",
-      "preco":"55.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/35/29/LfiwNwWa_t.jpg",
+      "descricao": "Quem gosta de bacon sabe que toda receita com barriga de porco defumada é mais gostosa. Pizza não seria uma exceção!",
+      "preco": "55.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":6,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 6,
+    "fields": {
       "titulo": "Pizza Portuguesa",
-      "urlImagem":"https://thumbs2.imgbox.com/8a/74/OlMBoXbz_t.jpg",
-      "descricao":"A pizza portuguesa é um sabor bastante popular em todas as pizzarias do nosso país. Trazida ao Brasil pelos portugueses, ela fica empatada em segundo lugar com a pizza marguerita, sabor tradicional italiano.",
-      "preco":"49.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/8a/74/OlMBoXbz_t.jpg",
+      "descricao": "A pizza portuguesa é um sabor bastante popular em nosso país. Trazida ao Brasil pelos portugueses, ela fica bem acirrada com a pizza marguerita, sabor tradicional italiano.",
+      "preco": "49.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":7,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 7,
+    "fields": {
       "titulo": "Pizza Margherita",
-      "urlImagem":"https://i.ibb.co/zF74zbr/6-RHag-Kn-E-t.jpg",
-      "descricao":"Reza a lenda que a deliciosa pizza margherita teve sua história iniciada quando os reis da Itália visitaram a cidade de Nápoles e decidiram provar a iguaria. O pizzaiolo que fez a pizza especialmente para o rei resolveu cobri-la com tomates, muçarela e manjericão para homenagear as cores da bandeira da Itália. Não somente a bandeira foi homenageada, mas também a rainha Margherita di Savoia, que teve seu nome dado à pizza especial.",
-      "preco":"52.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://i.ibb.co/zF74zbr/6-RHag-Kn-E-t.jpg",
+      "descricao": "Pizza Italiana, coberta com tomates, muçarela e manjericão para homenagear as cores da bandeira da Itália. Não somente a bandeira é homenageada, mas também a rainha Margherita di Savoia, que teve seu nome dado à pizza especial.",
+      "preco": "52.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":8,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 8,
+    "fields": {
       "titulo": "Pizza Pepperoni",
-      "urlImagem":"https://thumbs2.imgbox.com/8c/86/95igXhyU_t.jpg",
-      "descricao":"Pepperoni é uma variedade ítalo-americana apimentada do salame seco, feita de carne de porco e bovina, incluindo algumas vezes toucinho. A equivalente à pizza de pepperoni na Itália é conhecida como “pizza alla diavola”.",
-      "preco":"34.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/8c/86/95igXhyU_t.jpg",
+      "descricao": "Pepperoni é uma variedade ítalo-americana apimentada do salame seco, feita de carne de porco e bovina, incluindo algumas vezes toucinho. A equivalente à pizza de pepperoni na Itália é conhecida como “pizza alla diavola”.",
+      "preco": "34.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":9,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 9,
+    "fields": {
       "titulo": "Pizza Chocolate",
-      "urlImagem":"https://thumbs2.imgbox.com/a0/cc/ErpLTYry_t.jpg",
-      "descricao":"A mais querida entre as opções doces, a pizza de chocolate é capaz de arrancar suspiros por seu sabor inconfundível.",
-      "preco":"30.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/a0/cc/ErpLTYry_t.jpg",
+      "descricao": "A mais querida entre as opções doces, a pizza de chocolate é capaz de arrancar suspiros por seu sabor inconfundível.",
+      "preco": "30.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":10,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 10,
+    "fields": {
       "titulo": "Pizza Muçarela",
-      "urlImagem":"https://thumbs2.imgbox.com/33/77/npYqftui_t.jpg",
-      "descricao":"Tradicional, a pizza de muçarela é ideal para quem busca um recheio simples, mas sem deixar o sabor de lado. Simples e perfeita como tem que ser.",
-      "preco":"32.90",
-      "categoria":"SABOR"
+      "urlImagem": "https://thumbs2.imgbox.com/33/77/npYqftui_t.jpg",
+      "descricao": "Tradicional, a pizza de muçarela é ideal para quem busca um recheio simples, mas sem deixar o sabor de lado. Simples e perfeita como tem que ser.",
+      "preco": "32.90",
+      "categoria": "SABOR"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":11,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 11,
+    "fields": {
       "titulo": "Coca Cola 2L",
-      "urlImagem":"https://i.ibb.co/ZG98yqV/coca.jpg",
-      "descricao":"A Coca-Cola 2L Original é o refrigerante mais tradicional e consumido no mundo. Possui sabor inconfundível e único. É feito a partir de água gaseificada, açúcar, extrato de noz de cola e cafeína. É perfeita para compartilhar os melhores momentos da vida e com sua embalagem econômica ficou ainda mais fácil.",
-      "preco":"8.49",
-      "categoria":"BEBIDA"
+      "urlImagem": "https://i.ibb.co/ZG98yqV/coca.jpg",
+      "descricao": "A Coca-Cola 2L Original é o refrigerante mais tradicional e consumido no mundo, perfeita para compartilhar os melhores momentos da vida!",
+      "preco": "8.49",
+      "categoria": "BEBIDA"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":12,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 12,
+    "fields": {
       "titulo": "Guaraná 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/73/22/gZp5leSL_t.jpg",
-      "descricao":"Guaraná Antarctica 2L Regular : Gostinho do Brasil com sabor de quero mais? Vem de Guaraná Antarctica. O refrigerante centenário original do Brasil que é coisa nossa. Lançado em 1921, é a primeira bebida com sabor de guaraná feita com esse fruto que combina com tudo. Bateu aquela sede? Toma um gole que refrexcaaaa!",
-      "preco":"6.90",
-      "categoria":"BEBIDA"
+      "urlImagem": "https://thumbs2.imgbox.com/73/22/gZp5leSL_t.jpg",
+      "descricao": "Guaraná Antarctica 2L Regular : Gostinho do Brasil com sabor de quero mais? Vem de Guaraná Antarctica!",
+      "preco": "6.90",
+      "categoria": "BEBIDA"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":13,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 13,
+    "fields": {
       "titulo": "Fanta 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/99/44/YI5DgLyw_t.jpeg",
-      "descricao":"Refrigerante Fanta Laranja 2L. Elaborado a partir de suco natural de laranja, açúcar e água gaseificada.",
-      "preco":"7.29",
-      "categoria":"BEBIDA"
+      "urlImagem": "https://thumbs2.imgbox.com/99/44/YI5DgLyw_t.jpeg",
+      "descricao": "Refrigerante Fanta Laranja 2L. Elaborado a partir de suco natural de laranja, açúcar e água gaseificada.",
+      "preco": "7.29",
+      "categoria": "BEBIDA"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":14,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 14,
+    "fields": {
       "titulo": "Schweppes 2L",
-      "urlImagem":"https://i.ibb.co/19GjCkc/sprite.jpg",
-      "descricao":"Schweppes 2L é uma linha premium de bebidas, desenvolvida na Inglaterra em 1783 por Jacob Schweppe, um cientista amador que descobriu um método de produzir água carbonatada em escala comercial. Sua primeira fábrica teve lugar em Londres em 1792, produzindo a Schweppes Soda. Elaborado com água gaseificada, açúcar, suco de maçã, grapfruit e laranja, aroma natural e corante artificial tartrazina. Contém caloria, carboidrato e sódio.",
-      "preco":"7.89",
-      "categoria":"BEBIDA"
+      "urlImagem": "https://i.ibb.co/19GjCkc/sprite.jpg",
+      "descricao": "Schweppes é uma bebida premium, elaborada com água gaseificada, açúcar, suco de maçã, grapfruit e laranja, aroma natural e corante artificial tartrazina.",
+      "preco": "7.89",
+      "categoria": "BEBIDA"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":15,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 15,
+    "fields": {
       "titulo": "Pepsi 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/7e/10/o8keARQS_t.jpeg",
-      "descricao":"Originalmente, a fórmula da Pepsi 2L foi criada para fins medicinais. Mas seu sabor agradou tanto que o xarope começou a ser consumido simplesmente por prazer. Cinco anos mais tarde, a fórmula transformou-se em bebida e começou a ser comercializada. Hoje, a Pepsi é um refrigerante de cola com aroma natural, muito apreciado pelo sabor suave e pela refrescância.",
-      "preco":"5.99",
-      "categoria":"BEBIDA"
+      "urlImagem": "https://thumbs2.imgbox.com/7e/10/o8keARQS_t.jpeg",
+      "descricao": "A Pepsi é um refrigerante de cola com aroma natural, muito apreciado pelo sabor suave e pela refrescância.",
+      "preco": "5.99",
+      "categoria": "BEBIDA"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":16,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 16,
+    "fields": {
       "titulo": "Pizza Frango com Catupiry + Coca Coca 2L",
-      "urlImagem":"https://i.ibb.co/9b5RQn0/pizza0.jpg",
-      "descricao":"Combo Pizza de Frango Catupiry com refrigerante Coca Cola 2L",
-      "preco":"52.99",
-      "categoria":"COMBO"
+      "urlImagem": "https://i.ibb.co/9b5RQn0/pizza0.jpg",
+      "descricao": "Combo Pizza de Frango Catupiry com refrigerante Coca Cola 2L",
+      "preco": "52.99",
+      "categoria": "COMBO"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":17,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 17,
+    "fields": {
       "titulo": "Pizza Napolitana + Schweppes 2L",
-      "urlImagem":"https://i.ibb.co/N2zTZXB/pizza1.jpg",
-      "descricao":"Combo Pizza Napolitana com refrigerante Schweppes 2L",
-      "preco":"67.00",
-      "categoria":"COMBO"
+      "urlImagem": "https://i.ibb.co/N2zTZXB/pizza1.jpg",
+      "descricao": "Combo Pizza Napolitana com refrigerante Schweppes 2L",
+      "preco": "67.00",
+      "categoria": "COMBO"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":18,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 18,
+    "fields": {
       "titulo": "Pizza Calabresa + Pizza 4Queijos + Fanta 2L",
-      "urlImagem":"https://i.ibb.co/K0ppPkH/pizza3.jpg",
-      "descricao":"Supercombo Pizza Calabresa + 4Queijos + refrigerante Fanta 2L",
-      "preco":"110.99",
-      "categoria":"COMBO"
+      "urlImagem": "https://i.ibb.co/K0ppPkH/pizza3.jpg",
+      "descricao": "Supercombo Pizza Calabresa + 4Queijos + refrigerante Fanta 2L",
+      "preco": "110.99",
+      "categoria": "COMBO"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":19,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 19,
+    "fields": {
       "titulo": "Pizza Bacon + Pizza Portuguesa + Guaraná 2L",
-      "urlImagem":"https://i.ibb.co/82F3RSr/pizza4.jpg",
-      "descricao":"Supercombo Pizza Bacon + Portuguesa + refrigerante Guaraná 2L",
-      "preco":"102.99",
-      "categoria":"COMBO"
+      "urlImagem": "https://i.ibb.co/82F3RSr/pizza4.jpg",
+      "descricao": "Supercombo Pizza Bacon + Portuguesa + refrigerante Guaraná 2L",
+      "preco": "102.99",
+      "categoria": "COMBO"
     }
   },
   {
-    "model":"produto.produto",
-    "pk":20,
-    "fields":{
+    "model": "produto.produto",
+    "pk": 20,
+    "fields": {
       "titulo": "Combo Doce",
-      "urlImagem":"https://i.ibb.co/PcKGjq1/pizzachoco.jpg",
-      "descricao":"Pizza Doce de chocolate acompanhado de um refrigerante Pepsi 2L",
-      "preco":"32.99",
-      "categoria":"COMBO"
+      "urlImagem": "https://i.ibb.co/PcKGjq1/pizzachoco.jpg",
+      "descricao": "Pizza Doce de chocolate acompanhado de um refrigerante Pepsi 2L",
+      "preco": "32.99",
+      "categoria": "COMBO"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":1,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 1,
+    "fields": {
       "sabor": "Frango com Catupiry",
-      "preco":"48.99"
+      "preco": "48.99"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":2,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 2,
+    "fields": {
       "sabor": "Napolitana",
-      "preco":"65.99"
+      "preco": "65.99"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":3,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 3,
+    "fields": {
       "sabor": "Calabresa",
-      "preco":"47.90"
+      "preco": "47.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":4,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 4,
+    "fields": {
       "sabor": "4 Queijos",
-      "preco":"42.90"
+      "preco": "42.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":5,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 5,
+    "fields": {
       "sabor": "Bacon",
-      "preco":"55.90"
+      "preco": "55.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":6,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 6,
+    "fields": {
       "sabor": "Portuguesa",
-      "preco":"49.90"
+      "preco": "49.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":7,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 7,
+    "fields": {
       "sabor": "Margherita",
-      "preco":"52.90"
+      "preco": "52.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":8,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 8,
+    "fields": {
       "sabor": "Pepperoni",
-      "preco":"34.90"
+      "preco": "34.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":9,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 9,
+    "fields": {
       "sabor": "Chocolate",
-      "preco":"30.90"
+      "preco": "30.90"
     }
   },
   {
-    "model":"produto.saborpizza",
-    "pk":10,
-    "fields":{
+    "model": "produto.saborpizza",
+    "pk": 10,
+    "fields": {
       "sabor": "Muçarela",
-      "preco":"32.90"
+      "preco": "32.90"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":1,
-    "fields":{
-      "nome_bairro":"Centro",
-      "taxa_entrega":"10.00"
+    "model": "conta.bairro",
+    "pk": 1,
+    "fields": {
+      "nome_bairro": "Centro",
+      "taxa_entrega": "10.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":2,
-    "fields":{
-      "nome_bairro":"Planalto",
-      "taxa_entrega":"5.00"
+    "model": "conta.bairro",
+    "pk": 2,
+    "fields": {
+      "nome_bairro": "Planalto",
+      "taxa_entrega": "5.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":3,
-    "fields":{
-      "nome_bairro":"Pampulha",
-      "taxa_entrega":"7.00"
+    "model": "conta.bairro",
+    "pk": 3,
+    "fields": {
+      "nome_bairro": "Pampulha",
+      "taxa_entrega": "7.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":4,
-    "fields":{
-      "nome_bairro":"Floramar",
-      "taxa_entrega":"6.00"
+    "model": "conta.bairro",
+    "pk": 4,
+    "fields": {
+      "nome_bairro": "Floramar",
+      "taxa_entrega": "6.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":5,
-    "fields":{
-      "nome_bairro":"Castelo",
-      "taxa_entrega":"7.50"
+    "model": "conta.bairro",
+    "pk": 5,
+    "fields": {
+      "nome_bairro": "Castelo",
+      "taxa_entrega": "7.50"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":6,
-    "fields":{
-      "nome_bairro":"Savassi",
-      "taxa_entrega":"11.50"
+    "model": "conta.bairro",
+    "pk": 6,
+    "fields": {
+      "nome_bairro": "Savassi",
+      "taxa_entrega": "11.50"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":7,
-    "fields":{
-      "nome_bairro":"Nova Gameleira",
-      "taxa_entrega":"13.00"
+    "model": "conta.bairro",
+    "pk": 7,
+    "fields": {
+      "nome_bairro": "Nova Gameleira",
+      "taxa_entrega": "13.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":8,
-    "fields":{
-      "nome_bairro":"Prado",
-      "taxa_entrega":"12.00"
+    "model": "conta.bairro",
+    "pk": 8,
+    "fields": {
+      "nome_bairro": "Prado",
+      "taxa_entrega": "12.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":9,
-    "fields":{
-      "nome_bairro":"Serra",
-      "taxa_entrega":"14.00"
+    "model": "conta.bairro",
+    "pk": 9,
+    "fields": {
+      "nome_bairro": "Serra",
+      "taxa_entrega": "14.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":10,
-    "fields":{
-      "nome_bairro":"Eldorado",
-      "taxa_entrega":"17.00"
+    "model": "conta.bairro",
+    "pk": 10,
+    "fields": {
+      "nome_bairro": "Eldorado",
+      "taxa_entrega": "17.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":11,
-    "fields":{
-      "nome_bairro":"Buritis",
-      "taxa_entrega":"17.00"
+    "model": "conta.bairro",
+    "pk": 11,
+    "fields": {
+      "nome_bairro": "Buritis",
+      "taxa_entrega": "17.00"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":12,
-    "fields":{
-      "nome_bairro":"Santa Tereza",
-      "taxa_entrega":"11.50"
+    "model": "conta.bairro",
+    "pk": 12,
+    "fields": {
+      "nome_bairro": "Santa Tereza",
+      "taxa_entrega": "11.50"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":13,
-    "fields":{
-      "nome_bairro":"Lourdes",
-      "taxa_entrega":"11.80"
+    "model": "conta.bairro",
+    "pk": 13,
+    "fields": {
+      "nome_bairro": "Lourdes",
+      "taxa_entrega": "11.80"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":14,
-    "fields":{
-      "nome_bairro":"União",
-      "taxa_entrega":"6.80"
+    "model": "conta.bairro",
+    "pk": 14,
+    "fields": {
+      "nome_bairro": "União",
+      "taxa_entrega": "6.80"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":15,
-    "fields":{
-      "nome_bairro":"Estoril",
-      "taxa_entrega":"17.20"
+    "model": "conta.bairro",
+    "pk": 15,
+    "fields": {
+      "nome_bairro": "Estoril",
+      "taxa_entrega": "17.20"
     }
   },
   {
-    "model":"conta.bairro",
-    "pk":16,
-    "fields":{
-      "nome_bairro":"Nova Suiça",
-      "taxa_entrega":"12.30"
+    "model": "conta.bairro",
+    "pk": 16,
+    "fields": {
+      "nome_bairro": "Nova Suiça",
+      "taxa_entrega": "12.30"
     }
   }
 ]
