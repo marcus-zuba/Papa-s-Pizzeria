@@ -28,7 +28,7 @@
     <form action="carrinho/adicionar/{{ produto.id }}/" method="post">
       {{ form }}
       {% csrf_token %}
-      <input type="submit" value="Adicionar ao carrinho">
+      <input id="button" type="submit" value="Adicionar ao carrinho">
     </form>      
   </div>
 </div>
