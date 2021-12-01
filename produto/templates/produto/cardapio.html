@@ -4,6 +4,16 @@
 
 <style>
   
+  #card_title { 
+    float: none;
+    text-align: center;
+  }
+
+  #cardapio{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   .container_produto{
     display: grid;
     padding: 10px;
@@ -19,7 +29,7 @@
 </style>
 
 <div id=cardapio>
-  <h1><u>Cardapio</u></h1>
+  <h1 id="card_title"><em>Cardápio</em></h1>
   <h1>Sabores de Pizza</h1>
   <div id=sabores class="container_produto">
     {% for sabor in sabores %}

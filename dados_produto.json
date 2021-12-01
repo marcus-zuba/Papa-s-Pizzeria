@@ -49,7 +49,7 @@
     "pk":4,
     "fields":{
       "titulo": "Pizza 4 Queijos",
-      "urlImagem":"https://imgbox.com/KaW4ZuUw",
+      "urlImagem":"https://i.ibb.co/YjhLF7w/4queijos.jpg",
       "descricao":"A Pizza Quatro Queijos é uma deliciosa combinação de massa fresca, crocante e coberta com muito queijo quente derretido.",
       "preco":"42.90",
       "categoria":"SABOR"
@@ -82,7 +82,7 @@
     "pk":7,
     "fields":{
       "titulo": "Pizza Margherita",
-      "urlImagem":"https://thumbs2.imgbox.com/e1/13/6RHagKnE_t.jpg",
+      "urlImagem":"https://i.ibb.co/zF74zbr/6-RHag-Kn-E-t.jpg",
       "descricao":"Reza a lenda que a deliciosa pizza margherita teve sua história iniciada quando os reis da Itália visitaram a cidade de Nápoles e decidiram provar a iguaria. O pizzaiolo que fez a pizza especialmente para o rei resolveu cobri-la com tomates, muçarela e manjericão para homenagear as cores da bandeira da Itália. Não somente a bandeira foi homenageada, mas também a rainha Margherita di Savoia, que teve seu nome dado à pizza especial.",
       "preco":"52.90",
       "categoria":"SABOR"
@@ -126,7 +126,7 @@
     "pk":11,
     "fields":{
       "titulo": "Coca Cola 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/da/48/veCW8JTM_t.jpg",
+      "urlImagem":"https://i.ibb.co/ZG98yqV/coca.jpg",
       "descricao":"A Coca-Cola 2L Original é o refrigerante mais tradicional e consumido no mundo. Possui sabor inconfundível e único. É feito a partir de água gaseificada, açúcar, extrato de noz de cola e cafeína. É perfeita para compartilhar os melhores momentos da vida e com sua embalagem econômica ficou ainda mais fácil.",
       "preco":"8.49",
       "categoria":"BEBIDA"
@@ -159,7 +159,7 @@
     "pk":14,
     "fields":{
       "titulo": "Schweppes 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/2d/bd/luRe0Ey1_t.jpg",
+      "urlImagem":"https://i.ibb.co/19GjCkc/sprite.jpg",
       "descricao":"Schweppes 2L é uma linha premium de bebidas, desenvolvida na Inglaterra em 1783 por Jacob Schweppe, um cientista amador que descobriu um método de produzir água carbonatada em escala comercial. Sua primeira fábrica teve lugar em Londres em 1792, produzindo a Schweppes Soda. Elaborado com água gaseificada, açúcar, suco de maçã, grapfruit e laranja, aroma natural e corante artificial tartrazina. Contém caloria, carboidrato e sódio.",
       "preco":"7.89",
       "categoria":"BEBIDA"
@@ -181,7 +181,7 @@
     "pk":16,
     "fields":{
       "titulo": "Pizza Frango com Catupiry + Coca Coca 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
+      "urlImagem":"https://i.ibb.co/9b5RQn0/pizza0.jpg",
       "descricao":"Combo Pizza de Frango Catupiry com refrigerante Coca Cola 2L",
       "preco":"52.99",
       "categoria":"COMBO"
@@ -191,9 +191,9 @@
     "model":"produto.produto",
     "pk":17,
     "fields":{
-      "titulo": "Pizza Napolitana + Guaraná 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
-      "descricao":"Combo Pizza Napolitana com refrigerante Guaraná 2L",
+      "titulo": "Pizza Napolitana + Schweppes 2L",
+      "urlImagem":"https://i.ibb.co/N2zTZXB/pizza1.jpg",
+      "descricao":"Combo Pizza Napolitana com refrigerante Schweppes 2L",
       "preco":"67.00",
       "categoria":"COMBO"
     }
@@ -203,7 +203,7 @@
     "pk":18,
     "fields":{
       "titulo": "Pizza Calabresa + Pizza 4Queijos + Fanta 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
+      "urlImagem":"https://i.ibb.co/K0ppPkH/pizza3.jpg",
       "descricao":"Supercombo Pizza Calabresa + 4Queijos + refrigerante Fanta 2L",
       "preco":"110.99",
       "categoria":"COMBO"
@@ -213,9 +213,9 @@
     "model":"produto.produto",
     "pk":19,
     "fields":{
-      "titulo": "Pizza Bacon + Pizza Portuguesa + Schweppes 2L",
-      "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
-      "descricao":"Supercombo Pizza Bacon + Portuguesa + refrigerante Schweppes 2L",
+      "titulo": "Pizza Bacon + Pizza Portuguesa + Guaraná 2L",
+      "urlImagem":"https://i.ibb.co/82F3RSr/pizza4.jpg",
+      "descricao":"Supercombo Pizza Bacon + Portuguesa + refrigerante Guaraná 2L",
       "preco":"102.99",
       "categoria":"COMBO"
     }
@@ -225,7 +225,7 @@
     "pk":20,
     "fields":{
       "titulo": "Combo Doce",
-      "urlImagem":"https://thumbs2.imgbox.com/a8/99/McIXq64F_t.png",
+      "urlImagem":"https://i.ibb.co/PcKGjq1/pizzachoco.jpg",
       "descricao":"Pizza Doce de chocolate acompanhado de um refrigerante Pepsi 2L",
       "preco":"32.99",
       "categoria":"COMBO"

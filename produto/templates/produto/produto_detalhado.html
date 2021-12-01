@@ -4,6 +4,15 @@
   img{
     width: 200px;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    text-align: center;
+  }
+
+  h3{
+    color: #ce290f;
   }
 </style>
 
@@ -13,7 +22,7 @@
   <p>{% if produto.descricao != None and produto.descricao != '' %}
     {{ produto.descricao }}{% endif %}
   </p>
-  <div style="display: flex; flex-direction: row; 
+  <div style="display: flex; flex-direction: row;
               justify-content: space-between; padding: auto; align-items: baseline;">
     <h3>R$ {{ produto.preco }}</h3>
     <form action="carrinho/adicionar/{{ produto.id }}/" method="post">
