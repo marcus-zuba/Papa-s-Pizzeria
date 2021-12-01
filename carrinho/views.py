@@ -28,7 +28,7 @@ def cart_add(request, produto_id):
         raise ValidationError(_('Os sabores devem ser diferentes!'), code='invalid')
       preco_sabor_1 = cd['primeiro_sabor'].preco
       preco_sabor_2 = cd['segundo_sabor'].preco
-      preco = "{:.2f}".format(preco_sabor_1+preco_sabor_2/2)
+      preco = "{:.2f}".format((preco_sabor_1+preco_sabor_2)/2)
       carrinho.add(produto=produto,quantidade=cd['quantidade'],
       titulo="Pizza de Dois Sabores: {} e {}".format(cd['primeiro_sabor'].sabor, cd['segundo_sabor'].sabor), preco=preco)
   return redirect('carrinho:carrinho_detalhado')
@@ -39,6 +39,7 @@ def cart_update(request, key):
   if form.is_valid():
     cd = form.cleaned_data
     carrinho.update_quantidade(key, cd['quantidade'])
+  return redirect('carrinho:carrinho_detalhado')
 
 def cart_remove(request, key):
   carrinho = Carrinho(request)

@@ -80,6 +80,7 @@ class Carrinho(object):
 
   def update_quantidade(self, key, quantidade):
     self.carrinho[key]['quantidade'] = quantidade
+    self.save()
 
   def remove(self, key):
     """

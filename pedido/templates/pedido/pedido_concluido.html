@@ -10,7 +10,7 @@ Obrigado!
   <strong>{{ pedido.id }}</strong>, com valor total de <strong>R${{ pedido.get_total_cost }}</strong>.</p>
   {% with endereco=request.user.endereco %}
     <p>Em breve o seu pedido será entregue em {{ endereco.rua }}, 
-    No {{ endereco.numero }}, bairro {{ endereco.bairro }}</p>
+    No {{ endereco.numero }}, bairro {{ endereco.bairro }}!</p>
   {% endwith %}
 
 {% endblock %}
