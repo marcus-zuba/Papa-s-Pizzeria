@@ -21,7 +21,7 @@
         <div style="display: flex; flex-direction: row; 
                     justify-content: space-between; padding: auto; align-items: baseline;">
           <form action="carrinho/adicionar/-1/" method="post">
-            <div>
+            <div id="form_sabores">
               {% if messages %}
                {% for message in messages %}
                <p class="{{message.tags}}">{{ message }}</p>
@@ -31,11 +31,8 @@
             Segundo Sabor: {{ form_dois_sabores.segundo_sabor }} <br>
           </div>
             {% csrf_token %}
-            <div style="display:flex; flex-direction: row; justify-content: space-between";>
               Quantidade: {{ form_dois_sabores.quantidade }}
-              <span></span>
-              <input type="submit" value="Adicionar ao carrinho" style="align-self: flex-end;">
-            </div>
+              <input type="submit" value="Adicionar ao carrinho" style="align-self: flex-end;" class="button-input">
           </form>      
         </div>
       </div>

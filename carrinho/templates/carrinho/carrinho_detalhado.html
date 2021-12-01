@@ -31,12 +31,12 @@ Seu Carrinho
             <form action="atualizar/{{ item.id }}/" method="post">
               {{ item.atualizar_quantidade_form.quantidade }}
               {{ item.atualizar_quantidade_form.update }}
-            <input type="submit" value="Atualizar">
+            <input type="submit" value="Atualizar" class="button-input">
             {% csrf_token %}
             </form>
           </div>
           </td>
-          <td><a href="remover/{{ item.id }}/" class="button"> X </a></td>
+          <td><a href="remover/{{ item.id }}/" class="button-input" id="x"> X </a></td>
           <td class="num">R${{ item.preco }}</td>
           <td class="num">R${{ item.preco_total }}</td>
           </tr>
@@ -57,19 +57,18 @@ Seu Carrinho
     </table>
     {% if request.user.is_authenticated %}
       {% with endereco=request.user.endereco %}
-      <p>Seu pedido será entregue em {{ endereco.rua }}, 
-        No {{ endereco.numero }}, bairro {{ endereco.bairro }}</p>
+      <p>Seu pedido será entregue em <strong>{{ endereco.rua }}, 
+        Nº {{ endereco.numero }}, bairro {{ endereco.bairro }}!<a href="/conta/atualizar/" class="button">Alterar endereço de entrega</a></strong></p>
       {% endwith %}
-      <p>Caso precise modificar o seu endereço de entrega, <a href="/conta/atualizar/conta">clique aqui.</a></p>
     {% endif %}
+    <form action="/pedido/criar/" method="post">
     <div style="display: flex; flex-direction: row; justify-content: space-between;">     
       <a href="/" class="button">Voltar ao cardápio</a><br>
       <a href="limpar/" class="button">Limpar Carrinho</a><br>
-      <form action="/pedido/criar/" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Finalizar Compra" class="button">
-      </form>
+      {% csrf_token %}
+      <input type="submit" value="Finalizar Compra" class="button" id="finalizar-compra">
     </div>
+  </form>
   {% else %}
     <h1>Seu carrinho está vazio!</h1>
     <a href="/" class="button"> Voltar ao cardápio</a>

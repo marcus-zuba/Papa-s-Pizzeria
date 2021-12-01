@@ -37,7 +37,9 @@ def atualizar_conta(request):
       form_conta.save()
       form_endereco.save()
       messages.success(request, 'Informações atualizadas com sucesso!')
-      return redirect('/conta/')
+    else:
+        messages.error(request, 'Erro na atualização das informações!')
+    return redirect('/conta/')
   else:
     form_conta = ContaRegistrationForm(instance=request.user.conta)
     form_endereco = EnderecoRegistrationForm(instance=request.user.endereco)

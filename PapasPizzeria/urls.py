@@ -20,7 +20,7 @@ from produto.views import cardapio
 urlpatterns = [
     path('carrinho/', include('carrinho.urls', namespace="carrinho")),
     path('admin/', admin.site.urls),
-    path('conta/', include('conta.urls', namespace='conta'), name='conta'),
+    path('conta/', include('conta.urls'), name='conta'),
     path('pedido/', include('pedido.urls', namespace='pedido')),
     path('', cardapio, name='cardapio'),
 ]
