@@ -340,7 +340,7 @@
     "pk":4,
     "fields":{
       "nome_bairro":"Floramar",
-      "taxa_entrega":"8.00"
+      "taxa_entrega":"6.00"
     }
   },
   {
@@ -349,6 +349,94 @@
     "fields":{
       "nome_bairro":"Castelo",
       "taxa_entrega":"7.50"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":6,
+    "fields":{
+      "nome_bairro":"Savassi",
+      "taxa_entrega":"11.50"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":7,
+    "fields":{
+      "nome_bairro":"Nova Gameleira",
+      "taxa_entrega":"13.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":8,
+    "fields":{
+      "nome_bairro":"Prado",
+      "taxa_entrega":"12.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":9,
+    "fields":{
+      "nome_bairro":"Serra",
+      "taxa_entrega":"14.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":10,
+    "fields":{
+      "nome_bairro":"Eldorado",
+      "taxa_entrega":"17.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":11,
+    "fields":{
+      "nome_bairro":"Buritis",
+      "taxa_entrega":"17.00"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":12,
+    "fields":{
+      "nome_bairro":"Santa Tereza",
+      "taxa_entrega":"11.50"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":13,
+    "fields":{
+      "nome_bairro":"Lourdes",
+      "taxa_entrega":"11.80"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":14,
+    "fields":{
+      "nome_bairro":"União",
+      "taxa_entrega":"6.80"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":15,
+    "fields":{
+      "nome_bairro":"Estoril",
+      "taxa_entrega":"17.20"
+    }
+  },
+  {
+    "model":"conta.bairro",
+    "pk":16,
+    "fields":{
+      "nome_bairro":"Nova Suiça",
+      "taxa_entrega":"12.30"
     }
   }
 ]
