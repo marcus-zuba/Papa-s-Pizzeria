@@ -1,5 +1,18 @@
 # Papa's Pizzeria
 
+Primeiro Trabalho Prático da Disciplina de Laboratório de Engenharia de Software, ministrada pelo professor Eduardo Campos, do Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG).
+
+## Integrantes do Grupo 
+
+- DANILO GONÇALVES CUSTÓDIO
+    - matrícula: 20193016039
+- EDUARDO MARTINS GOMES PEREIRA
+    - matrícula: 20193001546
+- FELIPE MARTINS LEMOS DE MORAIS
+    - matrícula: 20193001045
+- MARCUS VINICIUS DURÃES ZUBA FERNANDES
+    - matrícula: 20193001822
+
 ## Configuração do projeto
 
 Após clonar o repositório, execute os seguintes passos na raiz do projeto:
@@ -20,7 +33,7 @@ Após clonar o repositório, execute os seguintes passos na raiz do projeto:
     - `python manage.py migrate`
 
 - Popule o banco de dados com os dados do json
-    - `python manage.py loaddata dados_produto.json`
+    - `python manage.py loaddata dados.json`
 
 - Execute o server
     - `python manage.py runserver`
