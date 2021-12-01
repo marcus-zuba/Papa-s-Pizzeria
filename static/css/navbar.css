@@ -22,7 +22,6 @@
 
   #logo{
     width: 10%;
-    height: 20%;
     position: fixed;
     margin: 0px 0px 0px 85px;
   }
@@ -34,7 +33,7 @@
   }
 
   #nav-bar-container a.active {
-    background-color: #04AA6D;
+    background-color: #b80f0f;
     color: white;
   }
 
@@ -46,6 +45,7 @@
     color: whitesmoke;
     text-decoration: none;
   }
+
   a:hover{
     color:darkslategrey;
     cursor: pointer;
