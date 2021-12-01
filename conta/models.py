@@ -1,6 +1,7 @@
+from django.core import validators
 from django.db import models
 from django.conf import settings
-from django.core.validators import RegexValidator
+from django.core.validators import RegexValidator, MaxValueValidator
 from cpf_field.models import CPFField
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
@@ -17,11 +18,11 @@ class Bairro(models.Model):
 
 class Endereco(models.Model):
   usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, related_name='endereco')
-  cep = models.CharField(max_length=8, validators=[RegexValidator(r'^\d{1,10}$')])
+  cep = models.IntegerField(validators=[MaxValueValidator(99999999)])
   rua = models.CharField(max_length=50)
   bairro = models.ForeignKey(Bairro, on_delete=models.CASCADE)
   numero = models.IntegerField()
-  complemento = models.CharField(max_length=6, null=True)
+  complemento = models.CharField(max_length=10, null=True)
   def __str__(self):
     return 'Endereço de CEP {} do usuário {}'.format(self.cep, self.usuario.username)
 
@@ -30,7 +31,7 @@ class Conta(models.Model):
   usuario = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
   nome_completo = models.CharField(max_length=100)
   cpf = CPFField('cpf')
-  telefone = models.CharField(max_length=11, validators=[RegexValidator(r'^\d{1,10}$')])
+  telefone = models.CharField(max_length=11, validators=[RegexValidator(r'^\d{1,14}$')])
   def __str__(self):
     return 'Conta do usuário {}'.format(self.usuario.username)
 

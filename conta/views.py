@@ -3,15 +3,10 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import LoginForm, UserRegistrationForm, ContaRegistrationForm, EnderecoRegistrationForm
-
-from django.utils.translation import activate
-
-activate('pt-br')
     
 # Create your views here.
 
 def login_usuario(request):
-  activate('pt-br')
   if request.method == 'POST':
     form = LoginForm(request.POST)
     if form.is_valid():
