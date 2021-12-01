@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from .forms import LoginForm, UserRegistrationForm, ContaRegistrationForm, EnderecoRegistrationForm
+from .forms import LoginForm, UserRegistrationForm, ContaRegistrationForm, EnderecoRegistrationForm, UserUpdateForm
 from pedido.models import Pedido, ItemPedido
-    
+from django.contrib import messages
+
 # Create your views here.
 
 def login_usuario(request):
@@ -27,27 +28,21 @@ def painel_usuario(request):
   compras = Pedido.objects.filter(usuario=request.user)
   return render(request, 'conta/painel_usuario.html', {'compras':compras})
 
-"""
-@login_required
-def atualizar_login(request):
-  if request.method == 'POST':
-    form = UserRegistrationForm(request.POST)
-    if form.is_valid():
-      
-
-  form = UserRegistrationForm()
-  string = "de Login"
-
 @login_required
 def atualizar_conta(request):
-  form = ContaRegistrationForm()
-  string = "Pessoais"
+  if request.method == 'POST':
+    form_conta = ContaRegistrationForm(request.POST, instance=request.user.conta)
+    form_endereco = EnderecoRegistrationForm(request.POST, instance=request.user.endereco)
+    if form_conta.is_valid() and form_endereco.is_valid():
+      form_conta.save()
+      form_endereco.save()
+      messages.success(request, 'Informações atualizadas com sucesso!')
+      return redirect('/conta/')
+  else:
+    form_conta = ContaRegistrationForm(instance=request.user.conta)
+    form_endereco = EnderecoRegistrationForm(instance=request.user.endereco)
+  return render(request, 'conta/atualizar_conta.html', {'form_conta': form_conta, 'form_endereco':form_endereco})
 
-@login_required
-def atualizar_endereco(request):
-  form = EnderecoRegistrationForm()
-  string = "de Endereço"
-"""
 
 def cadastrar_usuario(request):
   if request.method == 'POST':
