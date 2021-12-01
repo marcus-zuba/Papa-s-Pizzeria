@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import LoginForm, UserRegistrationForm, ContaRegistrationForm, EnderecoRegistrationForm
+from pedido.models import Pedido, ItemPedido
     
 # Create your views here.
 
@@ -24,6 +25,7 @@ def login_usuario(request):
 @login_required
 def painel_usuario(request):
   context = {'secao': 'painel_usuario'}
+  compras = Pedido.objects.filter(usuario=request.user)
   return render(request, 'conta/painel_usuario.html', context)
 
 def cadastrar_usuario(request):
